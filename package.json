@@ -1,0 +1,40 @@
+{
+  "name": "strabo",
+  "version": "0.1.24",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/browser/strabo.global.js",
+  "jsdelivr": "dist/browser/strabo.global.js",
+  "description": "Adds array support to String.prototype.[ startsWith | endsWith | includes ]",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emil-babayan/strabo.git"
+  },
+  "keywords": ["string", "polyfill", "startsWith", "endsWith", "includes"],
+  "author": "Your Name",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "typescript": "~6.0.2",
+    "unplugin-dts": "^1.1.1",
+    "vite": "^8.3.0"
+  }
+}
