@@ -8,9 +8,9 @@ Adds array support to `String.prototype.startsWith`, `endsWith`, and `includes`.
 "hello world".includes(["xyz", "wor"])           // true
 ```
 
-Normally these methods only accept a single string. **strabo** patches them so they also accept an array of strings, returning `true` if the string matches *any* element of the array — while remaining fully backward compatible with the original single-string behavior.
+Normally these methods only accept a single string. **strabo** patches them so they also accept an array of strings, returning `true` if the string matches *any* element of the array — while remaining fully backward compatible with the original single-string behavior. The whole package is 4.5kb gzipped.
 
-> ⚠️ **This package works by mutating global prototypes.** Importing it changes the behavior of `String.prototype.startsWith`, `endsWith`, and `includes` for your **entire JavaScript environment** — not just your own module. Read [How it works](#how-it-works) before installing.
+> ⚠️ **This package works by mutating global prototypes.** Importing it changes the behavior of `String.prototype.startsWith`, `endsWith`, and `includes` for your **entire JavaScript environment** — not just your own module. Read [How it works](#how-it-works) before installing. 
 
 ---
 
