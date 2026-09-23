@@ -15,7 +15,7 @@ if (!String.prototype.STRABO_CONF) {
 
 const checkNativeImpl = function(methodName: MethodName) {
 	const names = ["Jack", "John", "Jim"]
-	const testString = "John walks in the park"
+	const testString = "John walks in the park named after John"
 	return testString[methodName](names as unknown as string)
 }
 
