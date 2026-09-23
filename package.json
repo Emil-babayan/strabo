@@ -1,6 +1,6 @@
 {
   "name": "strabo",
-  "version": "0.1.25",
+  "version": "0.1.26",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "unpkg": "dist/browser/strabo.global.js",
